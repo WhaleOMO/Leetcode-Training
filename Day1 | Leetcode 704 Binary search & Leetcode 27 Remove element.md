@@ -66,6 +66,24 @@ public:
 };
 ```
 
+**Other Possible solution:** two pointers start from beginning, one slow one fast, the fast moves ahead slow and when slow's val is equal to val, replace its val with fast's val. Iterate untill fast reach the end of vector. 
+
+```C++
+class Solution{
+public:
+   int removeElement (vector<int>& nums, int val) {
+       int slow = 0;
+       for(int fast = 0; fast < nums.size(); fast++){
+           if(val != nums[fast])
+           {
+               nums[slow++] = nums|fast];
+           }
+        }
+        return slow;
+   }
+}
+```
+
 **Time Complexity:**  O(n)
 
 **Spcae Complexity:**  O(1)
