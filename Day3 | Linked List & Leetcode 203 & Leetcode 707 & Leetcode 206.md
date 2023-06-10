@@ -16,7 +16,7 @@
   };
   ```
 
-  
+<br/>  
 
 ## 203 Remove Linked List Elements
 
@@ -188,14 +188,15 @@ private:
 
 ## 206 Reverse Linked List
 
-**Link: ** [206 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
+**Link:** [206 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
 
-**Thoughts: ** 
+**Thoughts:** 
 
 * two pointers, one pointer for storing previous node, one for storing current node
 * reverse each node to prev, untill cur has no next
 
-![img](https://code-thinking.cdn.bcebos.com/gifs/206.%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.gif)
+![206 翻转链表](https://github.com/WhaleOMO/Leetcode-Training/assets/91104491/4f16dbb5-6847-4a14-a466-6aa0d7bc94c3)
+
 
 **Code:** 
 
@@ -219,7 +220,7 @@ public:
 
 
 
-**Time Complexity: ** O(n)
+**Time Complexity:** O(n)
 
 **Space Complexity:** O(1)
 
