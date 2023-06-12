@@ -11,15 +11,16 @@
 
 First, bridge tmp to current's next's next.
 
-**![Screen Shot 2023-06-12 at 15.08.37](/Users/whale/Library/Application Support/typora-user-images/Screen Shot 2023-06-12 at 15.08.37.png)**
+<img width="930" alt="Screen Shot 2023-06-12 at 15 08 37" src="https://github.com/WhaleOMO/Leetcode-Training/assets/91104491/487823f2-bd7e-4e9b-9be4-ff1181e3d9bb">
 
 Second, swap cur and cur's next.
 
-![Screen Shot 2023-06-12 at 15.10.35](/Users/whale/Library/Application Support/typora-user-images/Screen Shot 2023-06-12 at 15.10.35.png)
+<img width="930" alt="Screen Shot 2023-06-12 at 15 10 35" src="https://github.com/WhaleOMO/Leetcode-Training/assets/91104491/10fc600f-1696-4bd4-9271-5c6ffab17533">
+
 
 Finally, update pointers.
 
-![Screen Shot 2023-06-12 at 15.10.57](/Users/whale/Library/Application Support/typora-user-images/Screen Shot 2023-06-12 at 15.10.57.png)
+<img width="930" alt="Screen Shot 2023-06-12 at 15 10 57" src="https://github.com/WhaleOMO/Leetcode-Training/assets/91104491/84a588ca-78ee-4feb-a1d5-def8c5e81f05">
 
 **Code:**
 
@@ -102,7 +103,7 @@ public:
 
 ## 160 Intersection of Two LinkedList
 
-**Link:** [LinkName]()
+**Link:** [160 Intersection of Two LinkedList](https://leetcode.com/problems/intersection-of-two-linked-lists/)
 
 **Thoughts:**
 
@@ -178,9 +179,10 @@ public:
 * Slow and Fast pointers
 * If there is a circle, slow and fast pointers will eventually meet **in the circle**. Why? Because their **speed difference is only 1**, so when they both enter the circle loop, fast will definitely crash with slow (Alternatively, Imagine the circle is being cut from somewhere and unfolded, this becomes a chasing problem, speed diff is 1, so fast will not move across slow).
 
-![linkedlistcycle](/Users/whale/Downloads/linkedlistcycle.gif)
+![linkedlistcycle](https://github.com/WhaleOMO/Leetcode-Training/assets/91104491/a9aeb96c-0c9b-425f-8de1-b092a978b8b9)
 
-* Ok, but how to find the beginning of the circle? When fast and slow pointer meets, move one of the pointers to the start of the linked list and then traverse both pointers by one every step; when they meet again, that will be the beginning point of the circle.![142.环形链表](/Users/whale/Documents/GitHub/Leetcode/142.环形链表.png)
+* Ok, but how to find the beginning of the circle? When fast and slow pointer meets, move one of the pointers to the start of the linked list and then traverse both pointers by one every step; when they meet again, that will be the beginning point of the circle.<img width="742" alt="142 环形链表" src="https://github.com/WhaleOMO/Leetcode-Training/assets/91104491/48734efc-1dc0-48cc-9386-9afde576aa16">
+
 
   *Math*: 
 
